@@ -1,0 +1,7 @@
+server:
+  port: 8108
+  servlet:
+    context-path: /demo
+
+logging:
+  config: classpath:logback-spring.xml

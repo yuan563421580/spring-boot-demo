@@ -7,6 +7,7 @@
         <module>spring-boot-demo-properties</module>
         <module>spring-boot-demo-actuator</module>
         <module>spring-boot-demo-admin</module>
+        <module>spring-boot-demo-log-aop</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -27,6 +28,8 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <springboot.version>2.1.6.RELEASE</springboot.version>
         <hutool.version>5.0.0</hutool.version>
+        <guava.version>28.1-jre</guava.version>
+        <user.agent.version>1.20</user.agent.version>
     </properties>
 
     <dependencyManagement>
@@ -43,6 +46,18 @@
                 <groupId>cn.hutool</groupId>
                 <artifactId>hutool-all</artifactId>
                 <version>${hutool.version}</version>
+            </dependency>
+            <!-- guava工具类 -->
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${guava.version}</version>
+            </dependency>
+            <!-- 解析 UserAgent 信息 -->
+            <dependency>
+                <groupId>eu.bitwalker</groupId>
+                <artifactId>UserAgentUtils</artifactId>
+                <version>${user.agent.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
