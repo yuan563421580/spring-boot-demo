@@ -7,6 +7,7 @@
     spring-boot 集成 spring-boot-admin 来可视化的监控 spring-boot 程序的运行状态  
 六、创建模块： spring-boot-demo-log-aop： 端口：8108 ：   
     spring-boot 集成 spring-boot-demo-log-aop 主要演示如何使用 aop 切面对请求进行日志记录，并且记录 UserAgent 信息。  
+七、创建模块： spring-boot-demo-thymeleaf： 端口：8109  
 ----------------------  
 其他资料补充：  
 01).hutool工具类文档地址：https://www.hutool.cn/

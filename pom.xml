@@ -8,6 +8,7 @@
         <module>spring-boot-demo-actuator</module>
         <module>spring-boot-demo-admin</module>
         <module>spring-boot-demo-log-aop</module>
+        <module>spring-boot-demo-thymeleaf</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
