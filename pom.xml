@@ -10,6 +10,7 @@
         <module>spring-boot-demo-log-aop</module>
         <module>spring-boot-demo-thymeleaf</module>
         <module>spring-boot-demo-exception-handler</module>
+        <module>spring-boot-demo-orm-jpa</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
