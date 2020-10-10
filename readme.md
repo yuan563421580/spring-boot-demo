@@ -10,6 +10,8 @@
 七、创建模块： spring-boot-demo-thymeleaf： 端口：8109  
 八、创建模块： spring-boot-demo-exception-handler： 端口：8111  
 九、创建模块： spring-boot-demo-orm-jpa： 端口：8112  
+十、创建模块： spring-boot-demo-orm-mybatis-plugs： 端口：8113  
 ----------------------  
 其他资料补充：  
 01).hutool工具类文档地址：https://www.hutool.cn/
+02).mybatis-plus官方文档：http://mp.baomidou.com/
