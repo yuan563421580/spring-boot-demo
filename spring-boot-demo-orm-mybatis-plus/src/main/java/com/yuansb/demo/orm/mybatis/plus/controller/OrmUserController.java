@@ -105,6 +105,10 @@ public class OrmUserController {
         return result;
     }
 
+    /**
+     * 测试修改
+     * @return
+     */
     @GetMapping(value = "/update")
     public JSONObject testUpdate() {
         OrmUser user = userService.getById(4L);
