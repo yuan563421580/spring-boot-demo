@@ -28,11 +28,13 @@ ________________________________________________
         具体详见文件实现，固定写法不需要修改。  
     3.2)、创建代码生成器 MyBatisPlusCodeGenerator
         具体详见文件实现，固定写法只需要修改配置路径即可。  
-4、修改测试类 OrmUserController 实现测试方法
+        直接运行，测试代码生成成功。  
+4、修改测试类 OrmUserController 实现测试方法  
+    后续有需要可以继续补充。    
 5、启动程序进行测试  
     http:127.0.0.1:8113/demo/user/list
     http:127.0.0.1:8113/demo/user/page
-    http:127.0.0.1:8113/demo/user/pageWrapper
+    http:127.0.0.1:8113/demo/user/pageCondition
     http:127.0.0.1:8113/demo/user/byId/3
     http:127.0.0.1:8113/demo/user/insert
     http:127.0.0.1:8113/demo/user/update  

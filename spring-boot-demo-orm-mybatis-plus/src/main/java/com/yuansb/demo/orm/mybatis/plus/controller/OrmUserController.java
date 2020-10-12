@@ -3,7 +3,6 @@ package com.yuansb.demo.orm.mybatis.plus.controller;
 
 import cn.hutool.core.lang.Assert;
 import cn.hutool.json.JSONObject;
-import com.baomidou.mybatisplus.core.conditions.Wrapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
@@ -61,8 +60,8 @@ public class OrmUserController {
      * 分页查询 根据条件查询
      * @return
      */
-    @GetMapping(value = "/pageWrapper")
-    public JSONObject testPageWrapper() {
+    @GetMapping(value = "/pageCondition")
+    public JSONObject testPageCondition() {
         QueryWrapper<OrmUser> queryWrapper = new QueryWrapper<>();
         //queryWrapper.eq("phone_number", "17300000001");
         //链式
@@ -109,10 +108,10 @@ public class OrmUserController {
     @GetMapping(value = "/update")
     public JSONObject testUpdate() {
         OrmUser user = userService.getById(4L);
-        //Assert.assertNotNull(user);
+        Assert.notNull(user);
         user.setName("test_2_new");
         boolean flag = userService.updateById(user);
-        //Assert.assertTrue(b);
+        Assert.isTrue(flag);
         OrmUser newUser = userService.getById(4L);
 
         JSONObject result = new JSONObject();
