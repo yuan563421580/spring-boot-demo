@@ -28,6 +28,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
  *      @ApiOperation("xxx接口说明") 作用在接口方法上，说明方法的用途、作用
  *          value="说明方法的用途、作用"
  *          notes="方法的备注说明"
+ *          -示例： @ApiOperation(value="用户注册", notes="手机号、密码都是必输项，年龄随边填，但必须是数字")
  *
  *      @ApiModel("xxxPOJO说明") 作用在模型类上，表示一个返回响应数据的信息，如VO、BO
  *
@@ -54,6 +55,12 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
  *              code：数字，例如400
  *              message：信息，例如"请求参数没填好"
  *              response：抛出异常的类
+ *              -示例：
+ *                  @ApiOperation(value = "select1请求",notes = "多个参数，多种的查询参数类型")
+ *                  @ApiResponses({
+ *                      @ApiResponse(code=400,message="请求参数没填好"),
+ *                      @ApiResponse(code=404,message="请求路径没有或页面跳转路径不对")
+ *                  })
  *
  */
 @Configuration
