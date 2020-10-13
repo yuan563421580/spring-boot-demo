@@ -11,6 +11,7 @@
 八、创建模块： spring-boot-demo-exception-handler： 端口：8111  
 九、创建模块： spring-boot-demo-orm-jpa： 端口：8112  
 十、创建模块： spring-boot-demo-orm-mybatis-plugs： 端口：8113  
+十一、创建模块： spring-boot-demo-swagger： 端口：8114  
 ----------------------  
 其他资料补充：  
 01).hutool工具类文档地址：https://www.hutool.cn/
