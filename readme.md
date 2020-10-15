@@ -13,6 +13,7 @@
 十、创建模块： spring-boot-demo-orm-mybatis-plugs： 端口：8113  
 十一、创建模块： spring-boot-demo-swagger： 端口：8114  
 十二、创建模块： spring-boot-demo-swagger-beauty： 端口：8115  
+十三、创建模块： spring-boot-demo-docker： 端口：8080      
 ----------------------  
 其他资料补充：  
 01).hutool工具类文档地址：https://www.hutool.cn/

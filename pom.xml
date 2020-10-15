@@ -14,6 +14,7 @@
         <module>spring-boot-demo-orm-mybatis-plus</module>
         <module>spring-boot-demo-swagger</module>
         <module>spring-boot-demo-swagger-beauty</module>
+        <module>spring-boot-demo-docker</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

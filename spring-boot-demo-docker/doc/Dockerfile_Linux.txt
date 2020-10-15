@@ -1,0 +1,43 @@
+手动打包，在 Linux 系统中项目 jar 同级目录创建 Dockerfile  ， 并拷贝下面内容
+
+-------------拷贝内容.begin-------------
+
+# 基础镜像
+FROM java:8
+
+# 作者信息
+MAINTAINER "ShiBo.Yuan 563421580@qq.com"
+
+# 添加一个存储空间
+VOLUME /tmp
+
+# 将项目的jar文件作为app.jar添加到容器
+ADD spring-boot-demo-docker.jar app.jar
+
+#在新创建的镜像中执行一些命令
+RUN bash -c 'touch /app.jar'
+
+# 暴露端口
+EXPOSE 8080
+
+# 应用启动命令 参数设定
+ENTRYPOINT ["java","-Dspring.profiles.active=test","-Djava.security.egd=file:/dev/./urandom","-jar","/app.jar"]
+
+#设置时区
+RUN /bin/cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && echo 'Asia/Shanghai' >/etc/timezone
+
+-------------拷贝内容.end-------------
+
+解释：
+
+java:8是指Docker Hub上官方提供的java镜像，版本号是8也就是jdk1.8，有了这个基础镜像后，Dockerfile可以通过FROM指令直接获取它的状态——也就是在容器中java是已经安装的，接下来通过自定义的命令来运行Spring Boot应用：
+
+VOLUME指向了一个/tmp的目录，由于Spring Boot使用内置的Tomcat容器，Tomcat默认使用/tmp作为工作目录。效果就是在主机的/var/lib/docker目录下创建了一个临时文件，并连接到容器的/tmp。
+
+将项目的jar文件作为app.jar添加到容器
+
+RUN表示在新创建的镜像中执行一些命令，然后把执行的结果提交到当前镜像。这里使用touch命令来改变文件的修改时间，Docker创建的所有容器文件默认状态都是“未修改”。这对于简单应用来说不需要，不过对于一些静态内容（比如：index.html）的文件就需要一个“修改时间”。
+
+EXPOSE 容器暴露端口
+
+ENTRYPOINT 应用启动命令 参数设定
