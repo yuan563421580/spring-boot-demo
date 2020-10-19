@@ -1,0 +1,10 @@
+server:
+  port: 8119
+  servlet:
+    context-path: /demo-consumer
+
+spring:
+  dubbo:
+    application:
+      name: demo-dubbo-consumer
+      registry: zookeeper://112.126.62.163:2181
