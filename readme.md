@@ -16,6 +16,7 @@
 十三、创建模块： spring-boot-demo-docker： 端口：8080      
 十四、创建模块： spring-boot-demo-dubbo： 端口：8118 和 8119            
 十四、创建模块： spring-boot-demo-install-war： 端口：8120
+十四、创建模块： spring-boot-demo-zookeeper： 端口：8121
 ----------------------  
 其他资料补充：  
 01).hutool工具类文档地址：https://www.hutool.cn/

@@ -1,0 +1,9 @@
+server:
+  port: 8121
+  servlet:
+    context-path: /demo
+
+zk:
+  url: 112.126.62.163:2181
+  timeout: 1000
+  retry: 3
