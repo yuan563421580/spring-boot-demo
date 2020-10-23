@@ -19,6 +19,7 @@
         <module>spring-boot-demo-install-war</module>
         <module>spring-boot-demo-zookeeper</module>
         <module>spring-boot-demo-async</module>
+        <module>spring-boot-demo-mq-kafka</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

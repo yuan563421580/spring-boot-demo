@@ -25,7 +25,10 @@
     Spring Boot 集成 Zookeeper 结合 AOP 实现分布式锁。  
 十五、创建模块： spring-boot-demo-async： 端口：8122  
     Spring Boot 如何使用原生提供的异步任务支持，实现异步执行任务。  
+十六、创建模块： spring-boot-demo-mq-kafka： 端口：8123  
+    Spring Boot 如何集成 kafka，实现消息的发送和接收。    
 ----------------------  
 其他资料补充：  
 01).hutool工具类文档地址：https://www.hutool.cn/
 02).mybatis-plus官方文档：http://mp.baomidou.com/
+03).阿里云地址：112.126.62.163 和 139.129.100.87
