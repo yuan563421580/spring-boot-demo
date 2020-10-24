@@ -1,0 +1,35 @@
+server:
+  port: 8124
+  servlet:
+    context-path: /demo
+
+spring:
+  # rabbitmq 配置
+  rabbitmq:
+    # 服务Host
+    host: 139.129.100.87
+    # 服务端口
+    port: 5672
+    # 登陆用户名
+    username: admin123
+    # 登陆密码
+    password: admin123
+    # 连接到rabbitMQ 的 vhost
+    virtual-host: /
+    # 指定心跳超时，单位秒，0为不指定；默认60s
+    #requested-heartbeat:
+    # 是否启用【发布确认】
+    #publisher-confirms:
+    # 是否启用【发布返回】
+    #publisher-returns:
+    # 连接超时，单位毫秒，0表示无穷大，不超时
+    #connection-timeout:
+    # 手动提交消息
+    listener:
+      simple:
+        acknowledge-mode: manual
+      direct:
+        acknowledge-mode: manual
+
+
+

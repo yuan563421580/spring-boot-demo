@@ -20,13 +20,15 @@
     如何容器化一个  Spring Boot 项目。       
 十四、创建模块： spring-boot-demo-dubbo： 端口：8118 和 8119  
     Spring Boot 如何集成 Dubbo。            
-十四、创建模块： spring-boot-demo-install-war： 端口：8120  
-十四、创建模块： spring-boot-demo-zookeeper： 端口：8121  
+十五、创建模块： spring-boot-demo-install-war： 端口：8120  
+十六、创建模块： spring-boot-demo-zookeeper： 端口：8121  
     Spring Boot 集成 Zookeeper 结合 AOP 实现分布式锁。  
-十五、创建模块： spring-boot-demo-async： 端口：8122  
+十七、创建模块： spring-boot-demo-async： 端口：8122  
     Spring Boot 如何使用原生提供的异步任务支持，实现异步执行任务。  
-十六、创建模块： spring-boot-demo-mq-kafka： 端口：8123  
-    Spring Boot 如何集成 kafka，实现消息的发送和接收。    
+十八、创建模块： spring-boot-demo-mq-kafka： 端口：8123  
+    Spring Boot 如何集成 kafka，实现消息的发送和接收。   
+十九、创建模块： spring-boot-demo-mq-rabbitmq： 端口：8124  
+    Spring Boot 如何集成 RabbitMQ，并且演示了基于直接队列模式、分列模式、主题模式、延迟队列的消息发送和接收。   
 ----------------------  
 其他资料补充：  
 01).hutool工具类文档地址：https://www.hutool.cn/
