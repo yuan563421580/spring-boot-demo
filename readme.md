@@ -29,6 +29,8 @@
     Spring Boot 如何集成 kafka，实现消息的发送和接收。   
 十九、创建模块： spring-boot-demo-mq-rabbitmq： 端口：8124  
     Spring Boot 如何集成 RabbitMQ，并且演示了基于直接队列模式、分列模式、主题模式、延迟队列的消息发送和接收。   
+二十、创建模块： spring-boot-demo-mongodb： 端口：8125  
+     Spring Boot 如何集成 MongoDB，使用官方的 starter 实现增删改查。    
 ----------------------  
 其他资料补充：  
 01).hutool工具类文档地址：https://www.hutool.cn/

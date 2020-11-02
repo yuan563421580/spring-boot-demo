@@ -1,0 +1,13 @@
+server:
+  port: 8125
+  servlet:
+    context-path: /demo
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://testDb:test123456@139.129.100.87:27017/demo_db
+
+logging:
+  level:
+    org.springframework.data.mongodb.core: debug
