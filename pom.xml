@@ -23,6 +23,7 @@
         <module>spring-boot-demo-mq-rabbitmq</module>
         <module>spring-boot-demo-mongodb</module>
         <module>spring-boot-demo-multi-datasource-mybatis</module>
+        <module>spring-boot-demo-task</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

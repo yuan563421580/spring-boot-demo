@@ -32,7 +32,10 @@
 二十、创建模块： spring-boot-demo-mongodb： 端口：8125  
      Spring Boot 如何集成 MongoDB，使用官方的 starter 实现增删改查。 
 二十一、创建模块： spring-boot-demo-multi-datasource-mybatis： 端口：8126   
-     Spring Boot 如何集成 Mybatis 的多数据源。可以自己基于AOP实现多数据源，这里基于 Mybatis-Plus 提供的一个优雅的开源的解决方案来实现。    
+     Spring Boot 如何集成 Mybatis 的多数据源。可以自己基于AOP实现多数据源，
+     这里基于 Mybatis-Plus 提供的一个优雅的开源的解决方案来实现。    
+二十二、创建模块： spring-boot-demo-task： 端口：8127  
+     主要演示了 Spring Boot 如何快速实现定时任务。   
 ----------------------  
 其他资料补充：  
 01).hutool工具类文档地址：https://www.hutool.cn/
