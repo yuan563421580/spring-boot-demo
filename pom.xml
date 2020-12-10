@@ -25,6 +25,7 @@
         <module>spring-boot-demo-multi-datasource-mybatis</module>
         <module>spring-boot-demo-task</module>
         <module>spring-boot-demo-task-quartz</module>
+        <module>spring-boot-demo-learn-multi-thread</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

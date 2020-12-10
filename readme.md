@@ -38,6 +38,8 @@
      主要演示了 Spring Boot 如何快速实现定时任务。  
 二十三、创建模块： spring-boot-demo-task-quartz： 端口：8128   
      主要演示了 Spring Boot 如何集成 Quartz 定时任务。  
+二十四、创建模块： spring-boot-demo-learn-multi-thread： 端口：无  
+     主要演示了 多线程相关用例测试学习。
 ----------------------  
 其他资料补充：  
 01).hutool工具类文档地址：https://www.hutool.cn/
