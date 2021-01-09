@@ -27,6 +27,7 @@
         <module>spring-boot-demo-task-quartz</module>
         <module>spring-boot-demo-learn-multi-thread</module>
         <module>spring-boot-demo-learn-lambda</module>
+        <module>spring-boot-demo-learn1</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
