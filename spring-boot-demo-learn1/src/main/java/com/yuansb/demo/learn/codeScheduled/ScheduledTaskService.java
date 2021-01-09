@@ -23,7 +23,7 @@ public class ScheduledTaskService {
     }
 
     /**
-     * 每天 11 点 28 分执行
+     * 每天 15 点 56 分执行
      */
     @Scheduled(cron = "0 56 15 ? * *")
     public void fixTimeExecution() {
