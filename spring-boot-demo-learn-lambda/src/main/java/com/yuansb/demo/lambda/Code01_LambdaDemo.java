@@ -9,6 +9,32 @@ public class Code01_LambdaDemo {
      *  Printer 中 如果有 多个方法则不是函数式接口
      */
 
+    /**
+     * java8 引入新的注解，@FunctionalInterface
+     * 函数式注解 @FunctionalInterface 添加在一个接口上，主要是编译器检查提示作用。
+     *  · 注解的作用是检测自定义 functional 接口是否符合要求，编译器会有错误提示；
+     *  · 一个接口符合 functional 的要求，不加这个注解也可以正常使用，建议都加上；
+     *  · 有且只能有一个抽象方法但可以有多个非抽象方法，简单说就是接口里面default和static的方法是可以有多个的，其他的方法只能有一个。
+     *
+     * ---
+     *
+     * function包中重要接口分析：
+     * Consumer (java.util.function.Consumer) :
+     *      接收一个输入参数 T 类型并不没有返回值；andThen 看源码可以知道是添加一个其后执行的 Consumer 对象。
+     * Function (java.util.function.Function) :
+     *      接收一个 T 类型参数，返回一个 R 类型的结果。
+     *      需要注意的是 compose\andThen 的传入参数和范围参数规则不同，这里的参数类型稍有不慎就会出错，复杂的链路里面排查 bug 是非常麻烦的事。
+     * Predicate (java.util.function.Predicate) :
+     *      是一个条件判断接口，接收一个 T 参数，返回一个 boolean 值，默认抽象方法 test(t); and\or\negate\isEqual分别对应逻辑与、或、非、相等操作。
+     * Supplier (java.util.function.Supplier) :
+     *      是一个只有返回没有参数的接口，只有一个方法 get。
+     *
+     * Consumer<T> Predicate<T> Supplier<T> Function<T, R> BiFunction<T, U, V>，
+     *      这里的T U R V并没有特别的定义只是一种约定，就像驼峰命名和泛型中K V E一样。
+     *
+     * java8 在这几个基础上封装了很多的延伸接口，如BiConsumer、DoubleConsumer、IntConsumer、LongConsumer、ObjIntConsumer等。
+     */
+
     interface Printer {
         void print(String val);
     }

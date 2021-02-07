@@ -14,6 +14,8 @@ public class Code02_StreamDemo {
 
     /**
      * stream() 转换成 流
+     *      List列表转换成流：List.stream()
+     *      String[]数组转换成流Stream.of(String[])
      * filter() 传 流下的 lambda 表达式
      *      filter(s -> s.startsWith("c")) 过滤 c 开头的
      * map() 对每一个数据进行处理
