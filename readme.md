@@ -42,6 +42,8 @@
      主要演示了 多线程相关用例测试学习。
 二十五、创建模块： spring-boot-demo-learn-lambda： 端口：无  
      主要演示了 lambda 相关用例测试学习。
+二十六、创建模块： spring-boot-demo-webflux： 端口：8130  
+     主要演示了 webflux 的基础练习。
 ----------------------  
 其他资料补充：  
 01).hutool工具类文档地址：https://www.hutool.cn/

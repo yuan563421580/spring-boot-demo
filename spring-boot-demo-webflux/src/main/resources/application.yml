@@ -1,0 +1,4 @@
+server:
+  port: 8130
+  servlet:
+    context-path: /webflux

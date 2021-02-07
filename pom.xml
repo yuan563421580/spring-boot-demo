@@ -28,6 +28,7 @@
         <module>spring-boot-demo-learn-multi-thread</module>
         <module>spring-boot-demo-learn-lambda</module>
         <module>spring-boot-demo-learn1</module>
+        <module>spring-boot-demo-webflux</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
