@@ -37,9 +37,11 @@ public class Example01_03_CompletableFuture {
                 fileFutures.toArray(new CompletableFuture[fileFutures.size()])
         );
 
-        fileFutures.stream()
-                .map(f -> f.join())
-                .forEach(System.out::println);
+        List<Map> collect = fileFutures.stream()
+                .map(CompletableFuture::join)
+                .collect(Collectors.toList());
+
+        System.out.println(collect.toString());
 
         System.out.println("all done success...");
     }
